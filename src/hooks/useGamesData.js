@@ -6,7 +6,7 @@ const useGamesData = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://67f1305ec733555e24ac6980.mockapi.io/games') // Ganti dengan link kamu
+    fetch('https://67f1305ec733555e24ac6980.mockapi.io/games')
       .then(res => res.json())
       .then(data => {
         setGames(data);
