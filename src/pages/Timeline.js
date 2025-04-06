@@ -14,7 +14,7 @@ function Timeline() {
     fetch('https://67f1305ec733555e24ac6980.mockapi.io/timeline')
       .then((res) => res.json())
       .then((data) => {
-        const sorted = data.sort((a, b) => a.year.localeCompare(b.year));
+        const sorted = data.sort((a, b) => Number(a.id) - Number(b.id));
         setTimelineData(sorted);
         setLoading(false);
       })
