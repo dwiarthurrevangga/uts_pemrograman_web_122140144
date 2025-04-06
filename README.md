@@ -43,3 +43,35 @@ src/
 │   └── NotFound.jsx
 ├── App.jsx
 └── main.jsx
+
+---
+
+## 📱 Optimalisasi Mobile
+
+Website ini telah dioptimalkan agar nyaman diakses dari perangkat seluler:
+
+- ✅ Menggunakan **Bootstrap 5** untuk layout yang responsif (grid system & utility classes)
+- ✅ Tombol hamburger (`navbar-toggler`) berfungsi dengan baik di perangkat mobile
+- ✅ Navbar collapse otomatis saat diklik di layar kecil
+- ✅ Ukuran teks, padding, dan margin disesuaikan agar ramah layar kecil
+- ✅ Visual timeline tetap readable di mode portrait dan landscape
+
+> Pastikan file `bootstrap.bundle.min.js` digunakan (bukan hanya `bootstrap.min.js`) agar komponen seperti toggle navbar bekerja dengan benar.
+
+---
+
+## 📌 Catatan
+
+- Proyek ini dibuat sebagai bagian dari **UTS Pemrograman Web ITERA**.
+- Semua data game dan timeline diambil secara dinamis dari **MockAPI.io**.
+- Kamu bisa mengedit, menambah, atau menghapus data langsung dari dashboard MockAPI milikmu.
+- Telah dilakukan **testing di berbagai resolusi layar**, termasuk browser Android dan iOS.
+- Aplikasi ini menggunakan **React Router** untuk navigasi dan **React Hooks** seperti `useState`, `useEffect`, dan `useContext`.
+
+---
+
+## 🧑‍💻 Kontributor
+
+| Nama Lengkap       | NIM       | Program Studi              |
+|--------------------|-----------|----------------------------|
+| Dwi Arthurev Angga | 122140144 | Teknik Informatika - ITERA |
