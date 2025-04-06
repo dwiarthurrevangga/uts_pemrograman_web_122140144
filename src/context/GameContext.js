@@ -1,4 +1,3 @@
-// src/context/GameContext.js
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -10,7 +9,7 @@ export const GameProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('https://67f1305ec733555e24ac6980.mockapi.io/games') // Ganti dengan URL mockAPI kamu
+    axios.get('https://67f1305ec733555e24ac6980.mockapi.io/games')
       .then(response => {
         setGames(response.data);
         setLoading(false);
