@@ -64,8 +64,6 @@ Website ini telah dioptimalkan agar nyaman diakses dari perangkat seluler:
 ## 📌 Catatan
 
 - Proyek ini dibuat sebagai bagian dari **UTS Pemrograman Web ITERA**.
-- Semua data game dan timeline diambil secara dinamis dari **MockAPI.io**.
-- Kamu bisa mengedit, menambah, atau menghapus data langsung dari dashboard MockAPI milikmu.
 - Telah dilakukan **testing di berbagai resolusi layar**, termasuk browser Android dan iOS.
 - Aplikasi ini menggunakan **React Router** untuk navigasi dan **React Hooks** seperti `useState`, `useEffect`, dan `useContext`.
 
@@ -75,4 +73,4 @@ Website ini telah dioptimalkan agar nyaman diakses dari perangkat seluler:
 
 | Nama Lengkap       | NIM       | Program Studi              |
 |--------------------|-----------|----------------------------|
-| Dwi Arthurev Angga | 122140144 | Teknik Informatika - ITERA |
+| Dwi Arthur Revangga | 122140144 | Teknik Informatika - ITERA |
