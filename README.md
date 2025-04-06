@@ -43,6 +43,7 @@ src/
 │   └── NotFound.jsx
 ├── App.jsx
 └── main.jsx
+```
 
 ---
 
