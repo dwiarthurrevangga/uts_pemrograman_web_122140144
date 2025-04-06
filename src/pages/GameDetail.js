@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import gamesData from '../data/games.json';
+import { GameContext } from '../context/GameContext';
 
 function GameDetail() {
   const { id } = useParams();
-  const game = gamesData.find(g => g.id === parseInt(id));
+  const { games, loading, error } = useContext(GameContext);
+
+  if (loading) return <div className="container mt-4">Loading...</div>;
+  if (error) return <div className="container mt-4">Error: {error}</div>;
+
+  const game = games.find(g => g.id === Number(id));
 
   if (!game) {
     return (
