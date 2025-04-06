@@ -1,98 +1,98 @@
-/* Reset dan base layout */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
+  background-image: url('/public/assassins-creed-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #f0f0f0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #1f1f1f;
-  border-bottom: 2px solid #e63946;
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  z-index: -1;
 }
 
-.navbar-brand {
-  font-weight: bold;
-  color: #ffffff !important;
-}
-
-.nav-link {
-  color: #dddddd !important;
-}
-
-.nav-link:hover {
-  color: #e63946 !important;
-}
-
-/* Container umum */
-.container {
-  max-width: 960px;
-}
-
-/* Tombol */
-.btn-primary {
-  background-color: #e63946;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #d62828;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-  border: none;
-}
-
-.btn-secondary:hover {
-  background-color: #5a6268;
-}
-
-.btn-danger {
-  background-color: #c1121f;
-  border: none;
-}
-
-.btn-danger:hover {
-  background-color: #a10d1a;
-}
-
-/* Game card */
-.card {
-  background-color: #1f1f1f;
-  border: 1px solid #333;
-  color: #ffffff;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  color: #e63946;
-}
-
-.card-text {
-  font-size: 1rem;
-}
-
-/* Footer */
-footer {
-  background-color: #1f1f1f;
-  color: #888;
+.App {
   text-align: center;
-  padding: 20px 0;
-  margin-top: 50px;
+  padding: 20px;
 }
 
-/* Judul utama */
-h1, h2, h3 {
+.App-header {
+  background-color: transparent;
+  padding: 40px 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.game-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
   color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
-/* Link */
-a {
-  color: #e63946;
+.game-detail-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-a:hover {
-  color: #ff6b6b;
+.text-light-custom {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.about-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  color: #f0f0f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  line-height: 1.7;
+}
+
+.about-card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.about-card li {
+  margin-bottom: 8px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

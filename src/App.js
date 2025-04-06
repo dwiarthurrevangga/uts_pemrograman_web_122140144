@@ -6,8 +6,7 @@ import GameList from './components/GameList';
 import Footer from './components/Footer';
 import About from './pages/About';
 import GameDetail from './pages/GameDetail';
-
-// 🧠 Tambahkan ini
+import Timeline from './pages/Timeline';
 import { GameProvider } from './context/GameContext';
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
             <Route path="/" element={<GameList />} />
             <Route path="/about" element={<About />} />
             <Route path="/games/:id" element={<GameDetail />} />
+            <Route path="/timeline" element={<Timeline />} />
           </Routes>
         </div>
         <Footer />

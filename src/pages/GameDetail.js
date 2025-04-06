@@ -6,22 +6,22 @@ function GameDetail() {
   const { id } = useParams();
   const { games, loading, error } = useContext(GameContext);
 
-  if (loading) return <div className="container mt-4">Loading...</div>;
-  if (error) return <div className="container mt-4">Error: {error}</div>;
+  if (loading) return <div className="container mt-4 text-light-custom">Loading...</div>;
+  if (error) return <div className="container mt-4 text-light-custom">Error: {error}</div>;
 
   const game = games.find(g => g.id === Number(id));
 
   if (!game) {
     return (
       <div className="container mt-4">
-        <h2>Game tidak ditemukan</h2>
+        <h2 className="text-light-custom">Game tidak ditemukan</h2>
         <Link to="/" className="btn btn-danger mt-3">Kembali</Link>
       </div>
     );
   }
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 game-detail-card">
       <h2>{game.title} ({game.year})</h2>
       <p>{game.description}</p>
       <Link to="/" className="btn btn-secondary mt-3">Kembali ke daftar</Link>

@@ -13,7 +13,7 @@ function SearchBar({ onSearch }) {
     <input
       type="text"
       className="form-control my-3"
-      placeholder="Search games..."
+      placeholder="Cari game..."
       value={query}
       onChange={handleSearch}
     />

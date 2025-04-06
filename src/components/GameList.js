@@ -8,7 +8,7 @@ function GameList() {
   const [filteredGames, setFilteredGames] = useState([]);
 
   React.useEffect(() => {
-    setFilteredGames(games); // isi awal
+    setFilteredGames(games);
   }, [games]);
 
   const handleSearch = (query) => {
@@ -18,12 +18,12 @@ function GameList() {
     setFilteredGames(filtered);
   };
 
-  if (loading) return <p>Loading games...</p>;
+  if (loading) return <p className="text-light-custom">Loading lists...</p>;
   if (error) return <p className="text-danger">{error}</p>;
 
   return (
     <div className="container mt-4">
-      <h2 className="text-danger">Assassin's Creed Games</h2>
+      <h2 className="game-title">Assassin's Creed Games</h2>
       <SearchBar onSearch={handleSearch} />
 
       {filteredGames.map((game) => (
